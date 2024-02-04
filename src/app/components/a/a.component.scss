@@ -1,0 +1,25 @@
+p, span {
+  margin: 0;
+  color: rgba(0, 89, 255, 1);
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+
+  span {
+    margin-top: 5px;
+    font-size: 14px;
+  }
+
+  a {
+    font-size: 13px;
+    font-weight: 500;
+    text-decoration: none;
+    color: rgba(0, 89, 255, 1);
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

@@ -1,23 +1,20 @@
 /* tslint:disable:no-unused-variable */
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-import { By } from '@angular/platform-browser';
-import { DebugElement } from '@angular/core';
+import { SharedFooter } from './shared-footer.component';
 
-import { AnotherComponent } from './another.component';
-
-describe('AnotherComponent', () => {
-  let component: AnotherComponent;
-  let fixture: ComponentFixture<AnotherComponent>;
+describe('SharedFooter', () => {
+  let component: SharedFooter;
+  let fixture: ComponentFixture<SharedFooter>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ AnotherComponent ]
+      declarations: [ SharedFooter ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(AnotherComponent);
+    fixture = TestBed.createComponent(SharedFooter);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -1,4 +1,3 @@
-import { AnotherComponent } from './components/another/another.component';
 import { Injector, NgModule } from '@angular/core';
 import { createCustomElement } from '@angular/elements';
 import { BrowserModule } from '@angular/platform-browser';
@@ -6,12 +5,13 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { AComponent } from './components/a/a.component';
 import { BComponent } from './components/b/b.component';
+import { SharedFooter } from './components/shared-footer/shared-footer.component';
 import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    AnotherComponent,
+    SharedFooter,
     AComponent,
     BComponent
   ],
@@ -26,8 +26,8 @@ export class AppModule {
 
   ngDoBootstrap() {
     const components = [
-      { selector: 'app-micro-fe', component: AppComponent },
-      { selector: 'another-micro-fe', component: AnotherComponent }
+      { selector: 'app-contratacao-parcelada', component: AppComponent },
+      { selector: 'shared-footer', component: SharedFooter }
     ];
 
     components.forEach((c) => {

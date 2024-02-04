@@ -6,11 +6,11 @@ import { BComponent } from './components/b/b.component';
 
 const routes: Routes = [
     {
-        path: 'a',
+        path: 'contratacao-parcelada',
         component: AComponent
     },
     {
-        path: 'b',
+        path: 'contratacao-parcelada/resumo',
         component: BComponent
     }
 ];

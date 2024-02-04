@@ -1,15 +1,15 @@
 const concat = require("concat");
 const fs = require("fs");
-const someFile = "./dist/micro-fe/index.html";
-const scriptReplacedString = '<script src="micro-fe.js" type="module"></script></body>';
+const someFile = "./dist/contratacao-parcelada/index.html";
+const scriptReplacedString = '<script src="contratacao-parcelada.js" type="module"></script></body>';
 
 (async function build() {
   const files = [
-    "./dist/micro-fe/runtime.js",
-    "./dist/micro-fe/polyfills.js",
-    "./dist/micro-fe/main.js",
+    "./dist/contratacao-parcelada/runtime.js",
+    "./dist/contratacao-parcelada/polyfills.js",
+    "./dist/contratacao-parcelada/main.js",
   ];
-  await concat(files, "./dist/micro-fe/micro-fe.js").then(() => {
+  await concat(files, "./dist/contratacao-parcelada/contratacao-parcelada.js").then(() => {
     fs.readFile(someFile, "utf8", function (err, data) {
       if (err) {
         return console.log(err);
